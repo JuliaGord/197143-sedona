@@ -1,7 +1,8 @@
 ﻿# Личный проект «Седона»
 
 * Студент: [Юлия Подсекина](https://up.htmlacademy.ru/htmlcss/14/user/197143).
-* Наставник: Олег Петров (https://htmlacademy.ru/profile/id42390).
+* Наставник: 
+<a href="https://htmlacademy.ru/profile/id42390">Олег Петров</a>.
 
 ---
 
