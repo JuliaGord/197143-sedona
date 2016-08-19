@@ -1,21 +1,209 @@
   body {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  color: #7d7d7d;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #7d7d7d;
+    background-color: #f2f2f2;
   }
   .reasons-header h2 {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  color: #000;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #000;
+    width: 40%;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .index-search h2 {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .wrapper {
+    min-width: 768px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #C9BE6F;
+  }
+  /*======================================
+   Главная страница
+  =======================================*/
+
+  .main-navigation ul {
+    background-color: brown;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 75px;
+  }
+  .main-navigation li {
+    width: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .main-navigation li:nth-child(1), .main-navigation li:nth-child(2) {
+    float: left;
+  }
+  .main-navigation li:nth-child(3), .main-navigation li:nth-child(4) {
+    float: right;
+  }
+  .index-logo {
+    width: 8%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+  }
+  .logo-link {
+    display: block;
+    width: 138px;
+    height: 70px;
+  }
+  .logo-welcome {
+    width: 458px;
+    height: 352px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 140px;
+  }
+  .reasons-header p {
+    line-height: 26px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 5px;
+  }
+  .reason {
+    width: 33%;
+    text-align: center;
+  }
+  .reason-row img {
+    width: 67%;
+    height: 256px;
+  }
+  .reason-row img:nth-child(1) {
+    float: left;
+  }
+  .reason-row img:nth-child(2) {
+    float: right;
+  }
+  .reason-blue {
+    float: left;
+    background-color: #81b3d2;
+  }
+  .reason-icon {
+    float: left;
+  }
+  .reason-blue:last-child {
+    float: right;
+  }
+  .reason-gray {
+    float: left;
+    background-color: #eeeeee;
+  }
+  .reason h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  article {
+    margin-bottom: 55px;
+  }
+  .index-search p {
+    line-height: 24px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .search-title-link {
+    display: block;
+    margin: 0 auto;
+    width: 438px;
+    line-height: 26px;
+    font-size: 21px;
+    font-weight: 700;
+    padding: 32px 10px 30px;
+    text-align: center;
+    background-color: #766357;
+  }
+  .search-form {
+    margin: 0 auto;
+    width: 458px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 55px;
+  }
+  .datein, .dateout {
+    margin-bottom: 30px;
+    width: 345px;
+  }
+  label {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000;
+    padding-right: 20px;
+  }
+  label[for="numberpeople"] {
+    padding-right: 40px;
+  }
+  label[for="numberchild"] {
+    padding-right: 25px;
+  }
+  .half-width {
+    display: inline-block;
+    width: 50%;
+    margin-right: -2px;
+  }
+  .half-width-right {
+    text-align: right;
+  }
+  .number {
+    width: 113px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -2px;
+  }
+  .minus, .plus {
+    border: none;
+    padding: 1px;
+  }
+  .btn-search {
+    width: 458px;
+    margin: 55px 0;
+    padding: 16px 10px;
+    line-height: 26px;
+    text-align: center;
+  }
+  .main-footer {
+    margin-top: 78px;
+    background-color: #fff;
+  }
+  .hashtag, .footer-social, .footer-copyright {
+    width: 33%;
+    float: left;
+    text-align: center;
+  }
+  .hashtag {
+    line-height: 24px;
+    font-size: 21px;
+    font-weight: 700;
+  }
+  .footer-copyright span {
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 400;
+    vertical-align: 50%;
+    padding: 5px;
   }
