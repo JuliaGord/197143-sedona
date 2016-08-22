@@ -38,14 +38,13 @@
     <main class="index-main">
       <article class="main-content">
         <header class="reasons-header">
-          <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!
-            </h2>
+          <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p>
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
           </p>
         </header>
-        <div class="reason-row clearfix">
-          <div class="reason reason-blue about-reason-one">
+        <div class="reason-row-first clearfix">
+          <div class="reason reason-blue">
             <h3>Настоящий городок</h3>
             <div>— №1 —</div>
             <p>
@@ -56,7 +55,7 @@
             <img class="reason-image" src="img/index-realcity.jpg" width="100%" height="256px" alt="Фото Седона - настоящий городок">
           </figure>
         </div>
-        <div class="reason-row clearfix">
+        <div class="reason-row-second clearfix">
           <div class="reason reason-icon">
             <!-- <div> -->
             <!--Иконка дом -->
@@ -89,7 +88,7 @@
           <figure class="img-bridge">
             <img class="reason-image" src="img/bridge.jpg" width="100%" height="256px" alt="Фото Седона - мост дьявола">
           </figure>
-          <div class="reason reason-blue about-reason-two">
+          <div class="reason reason-blue">
             <h3>Там есть
                  мост дьявола
             </h3>
@@ -126,19 +125,22 @@
       <div class="index-search">
         <h2>Заинтересовались?</h2>
         <p>
-          Укажите предполагаемые даты поездки,
-           и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <a class="search-title-link" href="#">Поиск гостиницы в Седоне</a>
         <div class="search-form">
-          <form action="#" method="post">
-            <label for="datein">Дата заезда:</label>
-            <input type="text" name="datein" id="datein" class="datein">
-            <!--вставка иконки по классу  -->
-            <label for="dateout" class="name-dateout">Дата выезда:</label>
-            <input type="text" name="dateout" id="dateout" class="dateout">
-            <!--вставка иконки по классу  -->
-            <div class="half-width">
+          <form action="#" method="post" class="clearfix">
+            <div class="block-datein clearfix">
+              <label for="datein">Дата заезда:</label>
+              <input type="text" name="datein" id="datein" class="datein">
+              <!--вставка иконки по классу  -->
+            </div>
+            <div class="block-dateout clearfix">
+              <label for="dateout" class="name-dateout">Дата выезда:</label>
+              <input type="text" name="dateout" id="dateout" class="dateout">
+              <!--вставка иконки по классу  -->
+            </div>
+            <div class="half-width half-width-left">
               <label for="numberpeople" class="name-btn-people">Взрослые:</label>
               <div class="number">
                 <button class="minus" type="button">-</button>

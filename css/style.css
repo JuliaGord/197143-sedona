@@ -13,7 +13,8 @@
     line-height: 24px;
     color: #000;
     text-align: center;
-    margin-bottom: 30px;
+    margin: 0;
+    margin-bottom: 35px;
   }
   .clearfix:after {
     content: "";
@@ -31,7 +32,7 @@
   =======================================*/
 
   .main-header {
-    margin-bottom: 54px;
+    margin-bottom: 59px;
   }
   .main-navigation {
     position: relative;
@@ -45,17 +46,13 @@
   .main-navigation li {
     display: inline-block;
     width: 20%;
+    padding: 16px 0;
     vertical-align: top;
-    padding-top: 20px;
-    padding-bottom: 20px;
     text-align: center;
     font-size: 14px;
   }
   .main-navigation li:nth-child(2) {
     margin-right: 20%;
-  }
-  .main-navigation a {
-    padding: 10px;
   }
   .index-logo {
     width: 138px;
@@ -70,50 +67,54 @@
     width: 138px;
     height: 70px;
   }
-  .welcom {
-    background-color: #C9B1BA;
+  .welcome {
+    height: 357px;
+    padding: 78px 0;
   }
   .logo-welcome {
     width: 458px;
     height: 352px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 79px;
-    padding-top: 79px;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #CDE3FB;
+    padding: 0 15px;
   }
   .reasons-header {
+    margin-bottom: 32px;
     background-color: #fff;
   }
   .reasons-header h2 {
     color: #000;
     width: 40%;
-    padding: 10px 10px 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 10px;
-    margin-right: auto;
-    margin-left: auto;
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
   }
   .reasons-header p {
-    padding: 13px 10px 15px;
-    margin-top: 0;
-    margin-bottom: 40px;
+    margin: 0;
     line-height: 26px;
     color: #333333;
     text-align: center;
   }
+  .reason-row-first {
+    margin-bottom: 165px;
+  }
   .reason {
-    width: calc(100%*400/1200);
+    width: calc(100% *400 / 1200);
     text-align: center;
   }
+  .reason h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+  .reason h3, .reason div, .reason p {
+    margin: 0 auto;
+  }
   .img-real-city, .img-bridge {
-    width: calc(100%*800/1200);
+    width: calc(100% * 800 / 1200);
     height: 256px;
     margin: 0;
   }
@@ -125,98 +126,55 @@
   }
   .reason-blue {
     float: left;
+    padding: 52px 0;
     background-color: #81b3d2;
   }
   .reason-blue h3 {
-    padding-top: 54px;
-    padding-bottom: 5px;
-    margin: 0 auto;
-    margin-bottom: 10px;
+    width: 31%;
+    margin-bottom: 24px;
   }
   .reason-blue div {
-    margin-top: 6px;
-    padding-top: 5px;
-    padding-bottom: 6px;
-    margin-bottom: 11px;
+    margin-bottom: 23px;
   }
   .reason-blue p {
-    margin-left: auto;
-    margin-right: auto;
     width: 58%;
-    padding-top: 6px;
-    padding-bottom: 14px;
-    margin-top: 7px;
-    margin-bottom: 40px;
-  }
-  .about-reason-one h3 {
-    width: 23%;
-  }
-  .about-reason-two h3 {
-    width: 31%;
-  }
-  .about-reason-two p {
-    width: 64%;
   }
   .reason-icon {
     float: left;
   }
   .reason-icon h3 {
-    padding-top: 162px;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
-    margin-top: 0;
+    margin-bottom: 30px;
   }
   .reason-icon p {
     width: 53%;
-    margin: 0 auto 70px;
-    padding-top: 10px;
-    padding-bottom: 14px;
+  }
+  .reason-row-second {
+    margin-bottom: 84px;
   }
   .reason-gray {
     float: left;
+    padding: 50px 0 60px;
     background-color: #eeeeee;
   }
   .reason-gray h3 {
     width: 30%;
-    margin-top: 38px;
-    margin-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
+    margin-bottom: 25px;
   }
   .reason-gray div {
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
   }
   .reason-gray p {
-    padding: 10px;
-    margin-bottom: 52px;
-  }
-  .reason h3 {
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 21px;
+    width: 57%;
   }
   .main-content {
-    margin-bottom: 52px;
-  }
-  .index-search h2 {
-    padding: 10px;
-    margin-top: 0;
-    margin-bottom: 13px;
+    margin-bottom: 55px;
   }
   .index-search p {
     width: 28%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    padding: 5px;
-    margin-bottom: 43px;
-    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 52px;
     line-height: 24px;
+    text-align: center;
   }
   .search-title-link {
     display: block;
@@ -232,65 +190,57 @@
   }
   .search-form {
     margin: 0 auto;
-    width: 457px;
+    width: 455px;
     padding: 55px;
     background-color: #83BDBE;
   }
+  input {
+    border: none;
+  }
   .datein, .dateout {
-    width: 321px;
-    padding: 12px;
-    margin-bottom: 18px;
-  }
-  .datein {
-    margin-left: 20px;
-  }
-  .dateout {
-    margin-left: 18px;
+    width: 330px;
+    padding: 6px 0 6px 15px;
+    float: right;
   }
   label {
-    padding-left: 5px;
-    padding-right: 7px;
-    vertical-align: middle;
+    max-width: 105px;
+    float: left;
+    margin-right: 5px;
+    text-align: left;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
     color: #000;
   }
-  .name-dateout {
-    padding-left: 3px;
-  }
-  .name-btn-people {
-    padding-right: 20px;
-    margin-right: 20px;
-  }
-  .name-btn-child {
-    padding-right: 15px;
-    margin-right: 12px;
-  }
-  .search-form form {
-    font-size: 0;
+  .block-datein, .block-dateout {
+    margin-bottom: 30px;
   }
   .half-width {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
+    width: calc(50% * 455 / 100%);
     margin-bottom: 55px;
-    font-size: 14px;
+    font-size: 0;
+  }
+  .half-width-left {
+    float: left;
+    text-align: right;
   }
   .half-width-right {
+    float: right;
+    padding-left: 50px;
     text-align: right;
   }
   .number {
     width: 113px;
     display: inline-block;
     vertical-align: top;
+    font-size: 14px;
   }
   .minus, .plus {
     border: none;
-    padding: 1px;
+    padding: 0;
   }
   .btn-search {
-    width: 457px;
+    width: 100%;
     padding: 16px 10px;
     border: none;
     line-height: 26px;
@@ -300,8 +250,11 @@
     color: #fff;
   }
   .main-footer, .catalog-footer {
-    margin-top: 78px;
+    padding: 35px 103px 35px 130px;
     background-color: #fff;
+  }
+  .main-footer {
+     margin-top: 78px;
   }
   .hashtag, .footer-social, .footer-copyright {
     width: calc(100% / 3);
@@ -309,27 +262,22 @@
     text-align: center;
   }
   .hashtag {
-    padding-top: 48px;
-    padding-bottom: 48px;
-    text-align: center;
+    text-align: left;
     line-height: 24px;
     font-size: 21px;
     font-weight: 700;
     background-color: #75E070;
   }
   .footer-social {
-    padding-top: 37px;
-    padding-bottom: 37px;
     margin: 0 auto;
     background-color: #E9E070;
   }
   .footer-copyright {
-    padding-top: 41px;
-    padding-bottom: 41px;
     background-color: #E9E0F0;
   }
   .footer-copyright {
     position: relative;
+    text-align: right;
   }
   .copyright-link {
     width: 113px;
@@ -337,9 +285,67 @@
   }
   .footer-copyright span {
     position: absolute;
-    top: 35%;
-    left: 17%;
+    top: 14%;
+    left: 42%;
     line-height: 26px;
     font-size: 14px;
     font-weight: 400;
   }
+  /*======================================
+   Страница каталога
+  =======================================*/
+  /*
+  .catalog-filter label {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+  }
+  .catalog-filter label:last-child {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  .catalog-filter legend {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .filter-environment, .filter-home, .filter-price {
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: left;
+  }
+  .catalog-filter .filter-environment {
+    width: 14%;
+    float: left;
+    padding-left: calc(100%*73/1200);
+    margin-right: 10px;
+  }
+  .catalog-filter .filter-home {
+    width: 14%;
+    float: left;
+    padding-left: calc(100%*73/1200);
+    margin-right: 10px;
+  }
+  .filter-price {
+    width: 50%;
+    float: right;
+  }
+  .filter-price {
+    text-align: right;
+  }
+  .catalog-header {
+    margin-bottom: 30px;
+  }
+  */
