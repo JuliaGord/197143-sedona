@@ -262,7 +262,6 @@
   .hashtag, .footer-social, .footer-copyright {
     width: calc(100% / 3);
     float: left;
-    text-align: center;
   }
   .hashtag {
     text-align: left;
@@ -272,25 +271,25 @@
     background-color: #75E070;
   }
   .footer-social {
-    margin: 0 auto;
     background-color: #E9E070;
   }
   .footer-copyright {
+    text-align: right;
+    font-size: 0;
     background-color: #E9E0F0;
   }
-  .footer-copyright {
-    position: relative;
-    text-align: right;
-  }
   .copyright-link {
+    display: inline-block;
+    vertical-align: middle;
     width: 113px;
     height: 39px;
+    padding: 5px 0;
   }
+
   .footer-copyright span {
-    position: absolute;
-    top: 14%;
-    left: 42%;
-    line-height: 26px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
     font-size: 14px;
     font-weight: 400;
   }
@@ -300,10 +299,7 @@
 
   .filter-form {
     position: relative;
-    padding-left: calc(100% * 70 / 1200);
-    padding-right: calc(100% * 70 / 1200);
-    padding-top: calc(100% * 30 / 1200);
-    padding-bottom: calc(100% * 30 / 1200);
+    padding: 30px calc(100% * 70 / 1200);
   }
   .catalog-filter label, .catalog-filter fieldset, .catalog-filter legend {
     padding: 0;
@@ -338,14 +334,24 @@
     padding-left: calc(100% * 40 / 1200);
   }
   .filter-price {
+    position: relative;
     max-width: 50%;
     float: right;
     text-align: right;
   }
+.filter-price legend {
+    margin-bottom: 13px;
+}
   .btn-filter {
     position: absolute;
     bottom: 32px;
-    right: 95px;
+    right: 14%;
+    padding: 6px 30px;
+    border: 4px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
   }
   .catalog-header {
     margin-bottom: 30px;
@@ -360,9 +366,9 @@
   }
   .sort-filter {
     float: left;
+    width: 730px;
   }
   .sort-filter div, .sort-select, .sort-select li {
-    float: none;
     display: inline-block;
     vertical-align: top;
   }
@@ -377,8 +383,7 @@
   }
   .sort-arrow {
     float: right;
-  }
-  .sort-arrow {
+    width: 40px;
     margin: 0;
     padding: 0;
   }
@@ -398,9 +403,11 @@
   }
   .item-about {
     float: left;
+    width: 370px;
   }
   .item-rate {
     float: right;
+    max-width: 180px;
   }
   .item-title {
     margin: 0;
@@ -408,9 +415,12 @@
   }
   .more {
     float: left;
+    width: 110px;
+    margin-right: 10px;
   }
   .order {
     float: left;
+    width: 143px;
   }
   .more div, .order div {
     margin-bottom: 17px;

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <title>Седона</title>
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet" type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -58,7 +58,8 @@
           </fieldset>
           <fieldset class="filter-price">
             <legend>Стоимость в сутки (р):</legend>
-            <input type="range" name="number" min="0" max="3000">
+            <input name="min_price" value="от 0" class="price-min" type="text">
+            <input name="max_price" value="до 3000" class="price-max" type="text">
           </fieldset>
           <button class="btn-filter">Показать</button>
         </form>
@@ -177,7 +178,7 @@
         <a class="social-btn social-btn-ytb" href="#">Ютуб</a>
       </section>
       <section class="footer-copyright">
-        <span>websyte by</span
+          <span>websyte by</span>
         <a class="copyright-link" href="htmlacademy.ru">
           <img src="img/copyright.png" width="113" height="39" alt="htmlacademy">
         </a>
