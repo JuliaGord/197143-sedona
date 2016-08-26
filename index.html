@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet" type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -56,28 +56,19 @@
           </figure>
         </div>
         <div class="reason-row-second clearfix">
-          <div class="reason reason-icon">
-            <!-- <div> -->
-            <!--Иконка дом -->
-            <!-- </div>  -->
+          <div class="reason reason-icon reason-icon-home"> 
             <h3>Жилье</h3>
             <p>
               Рекомендуем пожить в настоящем мотеле, все как в кино!
             </p>
           </div>
-          <div class="reason reason-icon">
-            <!-- <div> -->
-            <!--Иконка еда -->
-            <!-- </div> -->
+          <div class="reason reason-icon reason-icon-food">
             <h3>Еда</h3>
             <p>
               Всегда заказывайте фирменный бургер, вы не разочаруетесь!
             </p>
           </div>
-          <div class="reason reason-icon">
-            <!-- <div> -->
-            <!--Иконка сувениры -->
-            <!-- </div> -->
+          <div class="reason reason-icon reason-icon-souvenir">
             <h3>Сувениры</h3>
             <p>
               Не только китайского, но и местного производства!
@@ -93,7 +84,7 @@
                  мост дьявола
             </h3>
             <div>— №2 —</div>
-            <p>
+            <p class="reason-about-bridge">
               Да, по нему можно пройти! Если конечно вы осмелитесь
             </p>
           </div>
@@ -132,28 +123,28 @@
           <form action="#" method="post" class="clearfix">
             <div class="block-datein clearfix">
               <label for="datein">Дата заезда:</label>
-              <input type="text" name="datein" id="datein" class="datein">
-              <!--вставка иконки по классу  -->
+              <input type="text" name="datein" class="datein" value="24 Апреля 2016">
+              <span class="icon-calendar"></span>
             </div>
             <div class="block-dateout clearfix">
               <label for="dateout" class="name-dateout">Дата выезда:</label>
-              <input type="text" name="dateout" id="dateout" class="dateout">
-              <!--вставка иконки по классу  -->
+              <input type="text" name="dateout" class="dateout" value="4 июля 2016">
+              <span class="icon-calendar"></span>
             </div>
             <div class="half-width half-width-left">
               <label for="numberpeople" class="name-btn-people">Взрослые:</label>
-              <div class="number">
-                <button class="minus" type="button">-</button>
-                <input type="text" value="2" size="4" name="numberpeople" id="numberpeople">
-                <button class="plus" type="button">+</button>
+              <div class="number">  
+                <input type="text" value="2" size="4" name="numberpeople" class="numberpeople">
+                <span class="icon-minus"></span>
+                <span class="icon-plus"></span>
               </div>
             </div>
             <div class="half-width half-width-right">
               <label for="numberchild" class="name-btn-child">Дети:</label>
               <div class="number">
-                <button class="minus" type="button">-</button>
-                <input type="text" value="2" size="4" name="numberchild" id="numberchild">
-                <button class="plus" type="button">+</button>
+                <input type="text" value="0" size="4" name="numberchild" class="numberchild">
+                <span class="icon-minus"></span>
+                <span class="icon-plus"></span>
               </div>
             </div>
             <button class="btn-search" type="submit">Найти</button>
@@ -167,15 +158,13 @@
     <footer class="main-footer clearfix">
       <div class="hashtag">#visitsedona</div>
       <section class="footer-social">
-        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-ytb" href="#">Ютуб</a>
+        <a class="social-btn" href="#"><span class="icon-twitter"></span></a>
+        <a class="social-btn" href="#"><span class="icon-facebook"></span></a>
+        <a class="social-btn" href="#"><span class="icon-youtube"></span></a>
       </section>
       <section class="footer-copyright">
         <span>websyte by</span>
-        <a class="copyright-link" href="htmlacademy.ru">
-          <img src="img/copyright.png" width="113" height="39" alt="htmlacademy">
-        </a>
+        <a class="copyright-link" href="htmlacademy.ru"></a>
       </section>
     </footer>
   </div>

@@ -35,31 +35,39 @@
           <img src="img/logo.png" width="138" height="70" alt="Седона">
         </a>
       </div>
-      <!--Фильтр не сделан -->
       <div class="filter-form">
         <form class="catalog-filter clearfix" action="#" method="post">
           <fieldset class="filter-environment">
             <legend>Инфраструктура:</legend>
-            <label>
-              <input type="checkbox" name="swim" value="Бассейн" checked>Бассейн</label>
-            <label>
-              <input type="checkbox" name="parking" value="Парковка">Парковка</label>
-            <label>
-              <input type="checkbox" name="wi-fi" value="wi-fi">wi-fi</label>
+             <input type="checkbox" name="swim" value="Бассейн" id="swim" checked>
+            <label for="swim">Бассейн</label>
+            <input type="checkbox" name="parking" value="Парковка" id="parking">
+            <label for="parking">Парковка</label>
+            <input type="checkbox" name="wi-fi" value="wi-fi" id="wi-fi">
+            <label for="wi-fi">wi-fi</label>
           </fieldset>
           <fieldset class="filter-home">
             <legend>Тип жилья:</legend>
-            <label>
-              <input type="checkbox" name="hotel" value="Бассейн" checked>Гостиница</label>
-            <label>
-              <input type="checkbox" name="motel" value="Парковка">Мотель</label>
-            <label>
-              <input type="checkbox" name="apartment" value="wi-fi">Апартаменты</label>
+            <input type="checkbox" name="hotel" value="Гостиница" id="hotel" checked>
+            <label for="hotel">Гостиница</label>
+            <input type="checkbox" name="motel" value="Мотель" id="motel" checked>
+            <label for="motel">Мотель</label>
+            <input type="checkbox" name="apartment" value="Апартаменты" id="apartment" checked>
+            <label for="apartment">Апартаменты</label>
           </fieldset>
           <fieldset class="filter-price">
             <legend>Стоимость в сутки (р):</legend>
-            <input name="min_price" value="от 0" class="price-min" type="text">
-            <input name="max_price" value="до 3000" class="price-max" type="text">
+            <div class="price-controls">
+                <label class="min-price">от <input name="min-price" value="0" type="text"></label>
+                <label class="max-price">до <input name="max-price" value="3000" type="text"></label>
+            </div>
+            <div class="range-controls">
+                <div class="scale">
+                   <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+            </div>
           </fieldset>
           <button class="btn-filter">Показать</button>
         </form>
@@ -69,28 +77,26 @@
       <div class="sort clearfix">
         <div class="sort-filter">
           <div class="result-search">Найдено: 3</div>
-          <div>Сортировка</div>
+          <div class="sort-filter-label">Сортировка</div>
           <ul class="sort-select">
             <li class="sort-select-label">
               <a class="filter-link filter-link-active">по цене</a>
             </li>
             <li class="sort-select-label">
-              <a class="filter-link" href="">по типу</a>
+              <a class="filter-link" href="#">по типу</a>
             </li>
             <li class="sort-select-label">
-              <a class="filter-link" href="">по рейтингу</a>
+              <a class="filter-link" href="#">по рейтингу</a>
             </li>
           </ul>
         </div>
         <ul class="sort-arrow">
           <li>
-            <a href="">вверх
-              <!--стрелка вверх -->
+            <a href="#" class="arrow-link"><span class="icon-up-dir icon-up-dir-hover"></span>
             </a>
           </li>
           <li>
-            <a class="arrow-link-active">вниз
-              <!--стрелка вниз -->
+            <a class="arrow-link arrow-link-active"><span class="icon-down-dir"></span>
             </a>
           </li>
         </ul>
@@ -114,8 +120,11 @@
             </div>
           </div>
           <div class="item-rate">
-            <div class="icon-star">
-              <!-- Звезды -->
+            <div class="star">
+             <span class="icon-star"></span>
+             <span class="icon-star"></span>
+             <span class="icon-star"></span>
+             <span class="icon-star"></span>
             </div>
             <div class="rate">Рейтинг: 8,5</div>
           </div>
@@ -138,8 +147,9 @@
             </div>
           </div>
           <div class="item-rate">
-            <div class="icon-star">
-              <!-- Звезды -->
+            <div class="star">
+             <span class="icon-star"></span>
+             <span class="icon-star"></span>
             </div>
             <div class="rate">Рейтинг: 8,9</div>
           </div>
@@ -151,7 +161,7 @@
           <div class="item-about">
             <h3 class="item-title">
                 <a class="item-title-link" href="#">Villas at poco diablo</a>
-              </h3>
+            </h3>
             <div class="more">
               <div>Апартаменты</div>
               <a class="more-link" href="#">Подробнее</a>
@@ -162,8 +172,10 @@
             </div>
           </div>
           <div class="item-rate">
-            <div class="icon-star">
-              <!-- Звезды -->
+            <div class="star">
+             <span class="icon-star"></span>
+             <span class="icon-star"></span>
+             <span class="icon-star"></span>
             </div>
             <div class="rate">Рейтинг: 9,2</div>
           </div>
@@ -173,15 +185,13 @@
     <footer class="catalog-footer clearfix">
       <div class="hashtag">#visitsedona</div>
       <section class="footer-social">
-        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-ytb" href="#">Ютуб</a>
+        <a class="social-btn" href="#"><span class="icon-twitter"></span></a>
+        <a class="social-btn" href="#"><span class="icon-facebook"></span></a>
+        <a class="social-btn" href="#"><span class="icon-youtube"></span></a>
       </section>
       <section class="footer-copyright">
-          <span>websyte by</span>
-        <a class="copyright-link" href="htmlacademy.ru">
-          <img src="img/copyright.png" width="113" height="39" alt="htmlacademy">
-        </a>
+        <span>websyte by</span>
+        <a class="copyright-link" href="htmlacademy.ru"></a>
       </section>
     </footer>
   </div>
