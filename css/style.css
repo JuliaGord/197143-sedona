@@ -125,8 +125,8 @@
     background-repeat: no-repeat, 
                        no-repeat;
     background-position: bottom center,
-                         center -60px;
-    background-size: 100%;
+                         center top;
+    background-size: contain, 100% 100%;
   }
   .logo-welcome {
     width: 458px;
@@ -156,16 +156,18 @@
     margin-bottom: 60px;
   }
   .reason {
-    width: calc(100% *400 / 1200);
+    width: calc(100% * 400 / 1200);
+    height: 256px;
+    box-sizing: border-box;
     text-align: center;
   }
   .reason h3 {
-    margin: 0 auto;
     font: 700 21px/21px "PT Sans", Arial, sans-serif;
     color: #000;
   }
 .reason p,
-.reason div {
+.reason div,
+.reason h3 {
     margin: 0 auto;
 }
  .img-real-city, .img-bridge {
@@ -185,12 +187,12 @@
   }
   .reason-blue {
     float: left;
-    padding: 52px 0;
+    padding: calc(100% * 52 / 1200) calc(100% * 55 / 1200);
     background-color: #81b3d2;
     color: #fff;
   }
   .reason-blue h3 {
-    width: 40%;
+    width: 130px;
     margin-bottom: 24px;
     color: #fff;
   }
@@ -198,16 +200,29 @@
     margin-bottom: 23px;
   }
   .reason-blue p {
-    width: 70%;
+   min-width: 190px;
   }
-.reason .reason-about-bridge {
-    width: 76%;
+.reason-blue-about-bridge {
+     padding: calc(100% * 52 / 1200) calc(100% * 45 / 1200);
+}
+.header-about-bridge {
+    min-width: 151px;
 }
   .reason-icon {
     float: left;
     position: relative;
     padding-top: 102px;
+    padding-left: calc(100% * 45 / 768);
+    padding-right: calc(100% * 45 / 768);
   }
+.reason-icon:nth-child(2) {
+    padding-left: calc(100% * 30 / 768);
+    padding-right: calc(100% * 30 / 768);
+}
+.reason-icon:nth-child(3) {
+    padding-left: calc(100% * 40 / 768);
+    padding-right: calc(100% * 40 / 768);
+}
 .reason-icon::before {
     content: "";
     position: absolute;
@@ -235,27 +250,33 @@
   .reason-icon h3 {
     margin-bottom: 30px;
   }
-  .reason-icon p {
-    width: 68%;
-  }
   .reason-row-second {
-    margin-bottom: 84px;
+    margin-bottom: 9px;
   }
   .reason-gray {
     float: left;
-    padding: 50px 0 60px;
+    padding-top: 45px;
     background-color: #eeeeee;
   }
   .reason-gray h3 {
-    width: 30%;
+    width: 130px;
     margin-bottom: 25px;
   }
   .reason-gray div {
     margin-bottom: 25px;
   }
-  .reason-gray p {
-    width: 70%;
-  }
+.reason-gray-first {
+    padding-left: calc(100% * 90 / 1200);
+    padding-right: calc(100% * 50 / 1200);
+}
+.reason-gray-second {
+     padding-left: calc(100% * 70 / 1200);
+    padding-right: calc(100% * 65 / 1200);
+}
+.reason-gray-third {
+     padding-left: calc(100% * 65 / 1200);
+    padding-right: calc(100% * 65 / 1200);
+}
   .main-content {
     margin-bottom: 55px;
   }
@@ -351,11 +372,12 @@
     text-align: right;
   }
   .number {
-    position: relative;
     display: inline-block;
     width: 113px;
-    vertical-align: top;
-    font-size: 14px;
+    vertical-align: middle;
+    font-size: 0;
+    text-align: center;
+    background-color: #f2f2f2;
   }
 .datein,
 .dateout,
@@ -369,7 +391,7 @@
 }
 .numberpeople,
 .numberchild {
-    padding: 6px 35px;
+    padding: 7px 0;
     text-align: center;
 }
   .minus, .plus {
@@ -378,10 +400,8 @@
   }
 .icon-minus,
 .icon-plus {
-    position: absolute;
-    top: 50%;
     font-size: 14px;
-    transform: translate(-50%, -50%);
+    line-height: 40px;
     color: #c2c2c2;
 }
 .icon-plus {
@@ -416,7 +436,7 @@
     color: rgba(255, 255, 255, 0.3);
 }
   .main-footer, .catalog-footer {
-    padding: 35px 103px 35px 130px;
+    padding: calc(100% * 35 / 1200) calc(100% * 103 / 1200) calc(100% * 35 / 1200) calc(100% * 130 / 1200);
     background-color: #fff;
   }
   .main-footer {
