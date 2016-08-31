@@ -11,6 +11,7 @@
     clear: both;
   }
   .wrapper {
+    position: relative;
     min-width: 768px;
     max-width: 1200px;
     margin: 0 auto;
@@ -280,6 +281,9 @@
   .main-content {
     margin-bottom: 55px;
   }
+.index-search {
+    position: relative;
+}
   .index-search h2 {
     margin: 0;
     margin-bottom: 35px;
@@ -298,7 +302,7 @@
     display: block;
     margin: 0 auto;
     width: 527px;
-    padding: 30px 20px 33px;
+    padding: 30px 19px 33px;
     font: 700 21px/26px "PT Sans", Arial, sans-serif;
     text-decoration: none;
     text-align: center;
@@ -306,11 +310,22 @@
     color: #fff;
   }
   .search-form {
-    margin: 0 auto;
+/*    display: none;*/
+    position: absolute;
+    z-index: 1;
+    top: 259px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 455px;
     padding: 55px;
+    background-color: #fff;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15)
   }
+/*
+.search-form-show {
+    display: block;
+}
+*/
   .search-form input {
     border: none;
     background-color: #f2f2f2;
@@ -439,9 +454,13 @@
     padding: calc(100% * 35 / 1200) calc(100% * 103 / 1200) calc(100% * 35 / 1200) calc(100% * 130 / 1200);
     background-color: #fff;
   }
-  .main-footer {
-    margin-top: 78px;
-  }
+.main-footer {
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
   .hashtag, .footer-social, .footer-copyright {
     width: calc(100% / 3);
     float: left;
@@ -479,7 +498,7 @@
     font-size: 0;
   }
   .copyright-link {
-    background: url(../img/copyright.png) no-repeat 0 0;
+    background: url("../img/sprite.png") no-repeat 0 -346px;
     display: inline-block;
     vertical-align: middle;
     width: 113px;
@@ -510,7 +529,6 @@
     background-size: cover;
 }
   .filter-form {
-    position: relative;
     padding: 30px calc(100% * 70 / 1200);
       
   }
@@ -538,7 +556,6 @@
   .catalog-filter .filter-environment {
     width: 23.5%;
     float: left;
-/*    margin-right: 1%;*/
   }
   .catalog-filter .filter-home {
     width: 44.5%;
@@ -579,7 +596,6 @@ input[type="checkbox"]:disabled + label::before {
     text-align: center;
   }
 .filter-price legend {
-/*    margin-left: 37%;*/
     text-align: center;
     margin-bottom: 13px;
 }
@@ -588,7 +604,6 @@ input[type="checkbox"]:disabled + label::before {
     width: calc(100% * 318 / 330);
     height: 32px;
     margin-bottom: 20px;
-/*    margin-left: 37%;*/
     border: 2px solid #fff;
     border-radius: 2px;
     font-size: 0;
@@ -658,10 +673,9 @@ input[type="checkbox"]:disabled + label::before {
     background: #1c4f80;
 }
   .btn-filter {
-    position: absolute;
-    bottom: 32px;
-    right: 20%;
-    transform: translateX(50%);
+    position: relative;
+    left: 16%;
+    transform: translateX(-50%);
     padding: 6px 35px;
     border: 2px solid #fff;
     background: transparent;
