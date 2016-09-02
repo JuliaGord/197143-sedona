@@ -65,8 +65,11 @@
   =======================================*/
 
   .main-header {
-    margin-bottom: 59px;
+    margin-bottom: 58px;
   }
+.index-main-navigation {
+    margin-bottom: 78px;
+}
   .main-navigation {
     position: relative;
     background-color: #fff;
@@ -79,7 +82,7 @@
   .main-navigation li {
     display: inline-block;
     width: 20%;
-    padding: 16px 0;
+    padding: 14px 0;
     vertical-align: top;
     text-align: center;
   }
@@ -119,16 +122,18 @@
     width: 138px;
     height: 70px;
   }
-  .welcome {
-    padding: 78px 0;
+  .main-header {
     background-image: url("../img/bg-white-mask.png"), 
                       url("../img/bg-index.jpg");
     background-repeat: no-repeat, 
                        no-repeat;
-    background-position: bottom center,
-                         center top;
+    background-position: center bottom,
+                         0 0;
     background-size: contain, 100% 100%;
   }
+.welcome {
+    padding-bottom: 80px;
+}
   .logo-welcome {
     width: 458px;
     height: 352px;
@@ -137,18 +142,18 @@
     padding: 0 15px;
   }
   .reasons-header {
-    margin-bottom: 32px;
+    margin-bottom: 51px;
   }
   .reasons-header h2 {
     width: 460px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     font: 700 21px/26px "PT Sans", Arial, sans-serif;
     color: #000;
     text-align: center;
   }
   .reasons-header p {
-    margin: 0;
+    margin: 0 auto;
     font: inherit;
     line-height: 26px;
     text-align: center;
@@ -189,6 +194,8 @@
   .reason-blue {
     float: left;
     padding: calc(100% * 52 / 1200) calc(100% * 55 / 1200);
+    padding-left: calc(100% * 60 / 1200);
+    padding-top: calc(100% * 54 / 1200);
     background-color: #81b3d2;
     color: #fff;
   }
@@ -198,13 +205,13 @@
     color: #fff;
   }
   .reason-blue div {
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
   .reason-blue p {
    min-width: 190px;
   }
 .reason-blue-about-bridge {
-     padding: calc(100% * 52 / 1200) calc(100% * 45 / 1200);
+     padding: calc(100% * 55 / 1200) calc(100% * 45 / 1200);
 }
 .header-about-bridge {
     min-width: 151px;
@@ -212,8 +219,8 @@
   .reason-icon {
     float: left;
     position: relative;
-    padding-top: 102px;
-    padding-left: calc(100% * 45 / 768);
+    padding-top: 100px;
+    padding-left: calc(100% * 48 / 768);
     padding-right: calc(100% * 45 / 768);
   }
 .reason-icon:nth-child(2) {
@@ -249,14 +256,15 @@
     height: 76px;
 }
   .reason-icon h3 {
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
   .reason-row-second {
-    margin-bottom: 9px;
+    margin-bottom: 14px;
   }
   .reason-gray {
     float: left;
     padding-top: 45px;
+    padding-bottom: calc(100% * 60 / 1200);
     background-color: #eeeeee;
   }
   .reason-gray h3 {
@@ -264,14 +272,17 @@
     margin-bottom: 25px;
   }
   .reason-gray div {
-    margin-bottom: 25px;
+    margin-bottom: 21px;
   }
+.reason-gray p {
+    min-width: 180px;
+}
 .reason-gray-first {
-    padding-left: calc(100% * 90 / 1200);
-    padding-right: calc(100% * 50 / 1200);
+    padding-left: calc(100% * 64 / 1200);
+    padding-right: calc(100% * 66 / 1200);
 }
 .reason-gray-second {
-     padding-left: calc(100% * 70 / 1200);
+     padding-left: calc(100% * 61 / 1200);
     padding-right: calc(100% * 65 / 1200);
 }
 .reason-gray-third {
@@ -279,14 +290,14 @@
     padding-right: calc(100% * 65 / 1200);
 }
   .main-content {
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 .index-search {
     position: relative;
 }
   .index-search h2 {
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 23px;
     font: 700 30px/35px "PT Sans", Arial, sans-serif;
     color: #000;
     text-align: center;
@@ -294,7 +305,7 @@
   .index-search p {
     width: 398px;
     margin: 0 auto;
-    margin-bottom: 52px;
+    margin-bottom: 47px;
     line-height: 24px;
     text-align: center;
   }
@@ -313,7 +324,7 @@
 /*    display: none;*/
     position: absolute;
     z-index: 1;
-    top: 259px;
+    top: 238px;
     left: 50%;
     transform: translateX(-50%);
     width: 455px;
@@ -321,6 +332,14 @@
     background-color: #fff;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15)
   }
+@keyframes popup {
+    from {
+        transform: translateY(295px);
+    }
+    to {
+        transform: translateY(295px);
+    }
+}
 .search-form-show {
     display: block;
 }
@@ -330,12 +349,17 @@
   }
   .datein, .dateout {
     width: 330px;
-    padding: 6px 0 6px 10px;
+    padding: 7px 0 7px 15px;
     float: right;
   }
 .datein:hover,
 .dateout:hover {
     background-color: #ebebeb;
+}
+.datein-active,
+.dateout-active {
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
 }
 .search-form .datein-active,
 .search-form .dateout-active {
@@ -348,18 +372,19 @@
     max-width: 105px;
     margin-right: 5px;
     font: 700 14px/26px "PT Sans", Arial, sans-serif;
-    line-height: 38px;
+    line-height: 40px;
     text-align: left;
   }
   .block-datein, .block-dateout {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 .icon-calendar {
     position: absolute;
     top: 50%;
-    right: 0;
+    right: -10px;
     font-size: 21px;
+    line-height: 40px;
     transform: translate(-50%, -50%);
     color: #c2c2c2;
 }
@@ -371,7 +396,7 @@
 }
   .half-width {
     width: 50%;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
     font-size: 0;
   }
   .half-width-left {
@@ -386,7 +411,7 @@
   }
   .number {
     display: inline-block;
-    width: 113px;
+    width: 116px;
     vertical-align: middle;
     font-size: 0;
     text-align: center;
@@ -409,7 +434,8 @@
 }
   .minus, .plus {
     border: none;
-    padding: 0;
+    padding-left: 1px;
+    padding-right: 1px;
   }
 .icon-minus,
 .icon-plus {
@@ -433,8 +459,7 @@
 }
   .btn-search {
     width: 100%;
-    padding: 16px 0;
-    padding-left: 20px;
+    padding: 15px 0;
     border: none;
     font: 700 21px/26px "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
@@ -453,7 +478,7 @@
     height: 593px;
 }
   .main-footer, .catalog-footer {
-    padding: calc(100% * 35 / 1200) calc(100% * 103 / 1200) calc(100% * 35 / 1200) calc(100% * 130 / 1200);
+    padding: calc(100% * 37 / 1200) calc(100% * 103 / 1200) calc(100% * 35 / 1200) calc(100% * 130 / 1200);
     background-color: #fff;
   }
 .main-footer {
@@ -505,7 +530,7 @@
     vertical-align: middle;
     width: 113px;
     height: 39px;
-    padding: 5px 0;
+    padding: 3px 0;
   }
 .copyright-link:hover {
     background: url("../img/sprite.png") no-repeat 0 0;
@@ -531,7 +556,7 @@
     background-size: cover;
 }
   .filter-form {
-    padding: 30px calc(100% * 70 / 1200);
+    padding: 26px calc(100% * 70 / 1200) 30px;
       
   }
   .catalog-filter label, .catalog-filter fieldset, .catalog-filter legend {
@@ -540,17 +565,19 @@
     margin: 0;
     border: none;
   }
-  .catalog-filter label {
+  .filter-environment label,
+  .filter-home label {
     margin-bottom: 25px;
     font: inherit;
     color: #fff;
     text-align: left;
   }
-  .catalog-filter label:last-child {
+  .filter-environment label:last-child,
+.filter-home label:last-child {
     margin-bottom: 0;
   }
   .catalog-filter legend {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     font-size: 16px;
     font-weight: 700;
     color: #fff;
@@ -598,38 +625,40 @@ input[type="checkbox"]:disabled + label::before {
     text-align: center;
   }
 .filter-price legend {
-    text-align: center;
-    margin-bottom: 13px;
+    text-align: left;
+    margin-bottom: 12px;
 }
  .price-controls {
     position: relative;
-    width: calc(100% * 318 / 330);
+    width: calc(100% * 320 / 329);
     height: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     border: 2px solid #fff;
     border-radius: 2px;
     font-size: 0;
 }
 .price-controls label {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     cursor: pointer;
+    font: inherit;
+    font-size: 14px;
+    color: #fff;
     line-height: 32px;
 }
 .filter-price .min-price,
 .filter-price .max-price{
-    padding-left: calc(100% * 62 / 318);
-    width: calc(100% * 94 / 318);
+    padding-left: calc(100% * 45 / 320);
+    width: calc(100% * 100 / 320);
 }
 .price-controls input {
-    width: calc(100% * 60 / 94);
+    width: calc(100% * 50 / 90);
     margin: 0;
     border: none;
     outline: none;
     background: none;
     color: #fff;
     font: 400 14px/21px "PT Sans", Arial, sans-serif;
-    line-height: 32px;
 }
 .price-controls::after {
     position: absolute;
@@ -643,7 +672,6 @@ input[type="checkbox"]:disabled + label::before {
 }
 .range-controls {
     position: relative;
-    width: calc(100% * 318 / 330);
 }
 .scale {
     height: 2px;
@@ -678,10 +706,11 @@ input[type="checkbox"]:disabled + label::before {
     position: relative;
     left: 16%;
     transform: translateX(-50%);
-    padding: 6px 35px;
+    padding: 0 33px;
     border: 2px solid #fff;
     background: transparent;
     font: inherit;
+    line-height: 37px;
     text-transform: uppercase;
     color: #fff;
   }
@@ -690,9 +719,9 @@ input[type="checkbox"]:disabled + label::before {
     color: #000;
 }
 .sort {
-    padding-left: calc(100% * 70 / 1200);
-    padding-right: calc(100% * 70 / 1200);
-    margin-bottom: 32px;
+    padding-left: calc(100% * 68 / 1200);
+    padding-right: calc(100% * 75 / 1200);
+    margin-bottom: 29px;
 }
   .sort-select {
     margin: 0;
@@ -707,7 +736,7 @@ input[type="checkbox"]:disabled + label::before {
     vertical-align: middle;
   }
   .result-search {
-    margin-right: 50px;
+    margin-right: 43px;
     font: 700 21px/26px "PT Sans", Arial, sans-serif;
   }
 .sort-filter-label {
@@ -718,7 +747,7 @@ input[type="checkbox"]:disabled + label::before {
     margin-left: 32px;
   }
   .sort-select-label:first-child {
-    margin-left: 38px;
+    margin-left: 36px;
   }
 .filter-link {
     text-decoration: none;
@@ -776,7 +805,7 @@ input[type="checkbox"]:disabled + label::before {
     width: auto;
 }
   .catalog-item {
-    padding: 26px 0;
+    padding: 29px 0;
     border-top: 1px solid #e5e5e5;
   }
   .item-image {
@@ -794,7 +823,7 @@ input[type="checkbox"]:disabled + label::before {
   .item-rate {
     float: right;
     max-width: 180px;
-    padding-right: calc(100% * 70 / 1200);
+    padding-right: calc(100% * 75 / 1200);
   }
 .star {
     margin-bottom: 38px;
@@ -810,6 +839,7 @@ input[type="checkbox"]:disabled + label::before {
     margin-right: 0;
 }
 .rate {
+    line-height: 25px;
     padding: 5px 15px;
     background-color: #f2f2f2;
 }
@@ -831,7 +861,7 @@ input[type="checkbox"]:disabled + label::before {
   .more {
     float: left;
     width: 110px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .order {
     float: left;
