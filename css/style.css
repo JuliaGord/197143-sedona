@@ -357,10 +357,12 @@
     border: none;
     background-color: #f2f2f2;
   }
-  .datein, .dateout {
+  .search-form .datein, 
+  .search-form .dateout {
     float: right;
     width: 330px;
     padding: 4px 0 7px 15px;
+    border: 2px solid #e5e5e5;
     outline: none;
   }
 .datein:hover,
@@ -370,7 +372,6 @@
 .datein:focus,
 .dateout:focus {
     background-color: #fff;
-    border: 2px solid #e5e5e5;
 }
   .search-form label {
     display: block;
@@ -500,6 +501,8 @@
 }
 .search-map {
     height: 593px;
+    width: 100%;
+    overflow: hidden;
 }
   .main-footer, .catalog-footer {
     padding: 35px calc(100% * 100 / 1200);
