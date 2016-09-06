@@ -7,8 +7,8 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet" type="text/css">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+ <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
-
 <body>
   <div class="wrapper">
     <!--обертка для контента -->
@@ -125,12 +125,12 @@
           <form action="#" method="post" class="clearfix">
             <div class="block-datein clearfix">
               <label for="datein">Дата заезда:</label>
-              <input type="text" name="datein" class="datein" value="24 Апреля 2016">
+              <input type="text" name="datein" class="datein" placeholder="24 Апреля 2016">
               <span class="icon-calendar"></span>
             </div>
             <div class="block-dateout clearfix">
               <label for="dateout" class="name-dateout">Дата выезда:</label>
-              <input type="text" name="dateout" class="dateout" value="4 июля 2016">
+              <input type="text" name="dateout" class="dateout" placeholder="4 июля 2016">
               <span class="icon-calendar"></span>
             </div>
             <div class="half-width half-width-left">
@@ -153,12 +153,12 @@
           </form>
         </div>
         <div class="search-map">
-          <!--Карта -->
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498327.63274461206!2d-111.84597311211085!3d34.8621317098609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1473091349834" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-      </div>
+     </div>
     </main>
     <footer class="main-footer clearfix">
-      <div class="hashtag">#visitsedona</div>
+     <div class="hashtag">#visitsedona</div>
       <section class="footer-social">
         <a class="social-btn icon-twitter" href="#"></a>
         <a class="social-btn icon-facebook" href="#"></a>
@@ -170,7 +170,7 @@
       </section>
     </footer>
   </div>
-<!--  <script src="js/popup.js"></script>-->
+  <script src="js/popup.js"></script>
 </body>
 
 </html>

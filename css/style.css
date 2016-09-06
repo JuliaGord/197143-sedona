@@ -308,7 +308,7 @@
     display: block;
     margin: 0 auto;
     width: 527px;
-    padding: 30px 19px 33px;
+    padding: 30px 21px 33px;
     font: 700 21px/26px "PT Sans", Arial, sans-serif;
     text-decoration: none;
     text-align: center;
@@ -316,19 +316,42 @@
     color: #fff;
   }
   .search-form {
-/*    display: none;*/
+    display: none;
     position: absolute;
-    z-index: 1;
-    top: 238px;
+    top: 242px;
     left: 50%;
-    transform: translateX(-50%);
-    width: 455px;
+    margin-left: -284px;
+    width: 569px;
     padding: 57px;
+    box-sizing: border-box;
     background-color: #fff;
-    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15)
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   }
 .search-form-show {
     display: block;
+    animation: show 1s forwards;
+}
+@keyframes show {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }       
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translate(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate(10px);
+  }
+}
+.search-form-error {
+ animation: shake 0.6s;
 }
   .search-form input {
     border: none;
@@ -357,11 +380,32 @@
     font: 700 14px/26px "PT Sans", Arial, sans-serif;
     line-height: 37px;
     text-align: left;
+    color: #000;
   }
   .block-datein, .block-dateout {
     position: relative;
     margin-bottom: 31px;
   }
+ .datein::-webkit-input-placeholder,
+.dateout::-webkit-input-placeholder {
+ color: #000;
+ opacity: 1;
+}
+.datein::-moz-placeholder,
+.dateout::-moz-placeholder{
+    color: #000;
+    opacity: 1;
+}
+.datein:-moz-placeholder,
+.dateout:-moz-placeholder{
+    color: #000;
+    opacity: 1;
+}
+.datein:-ms-input-placeholder,
+.dateout:-ms-input-placeholder {
+    color: #000;
+    opacity: 1;
+}
 .icon-calendar {
     position: absolute;
     top: 50%;
@@ -455,7 +499,6 @@
     color: rgba(255, 255, 255, 0.3);
 }
 .search-map {
-    background: url("../img/map.jpg") no-repeat 0 0;
     height: 593px;
 }
   .main-footer, .catalog-footer {
