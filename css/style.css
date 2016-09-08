@@ -125,6 +125,7 @@
   .main-header {
     background-image: url("../img/bg-white-mask.png"), 
                       url("../img/bg-index.jpg");
+    background-color: #A3CCDA;
     background-repeat: no-repeat, 
                        no-repeat;
     background-position: center bottom,
@@ -163,7 +164,7 @@
   }
   .reason {
     width: calc(100% * 400 / 1200);
-    height: 256px;
+      min-height: 256px;
     box-sizing: border-box;
     text-align: center;
   }
@@ -193,17 +194,17 @@
   }
   .reason-blue {
     float: left;
-    padding: 48px calc(100% * 55 / 1200) 50px calc(100% * 60 / 1200);
+    padding: 48px calc(100% * 55 / 1200) 30px calc(100% * 60 / 1200);
     background-color: #81b3d2;
     color: #fff;
   }
   .reason-blue h3 {
     width: 130px;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     color: #fff;
   }
   .reason-blue div {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   .reason-blue p {
    min-width: 190px;
@@ -500,6 +501,8 @@
     color: rgba(255, 255, 255, 0.3);
 }
 .search-map {
+    background-image: url("../img/map.jpg");
+    background-color: #BAE1C6;
     height: 593px;
     width: 100%;
     overflow: hidden;
